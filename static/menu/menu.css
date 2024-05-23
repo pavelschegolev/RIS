@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Общие стили для body (тега <body>) */
+body {
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт текста */
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: auto; /* Обнуляем отступы */
+    display: flex; /* Используем flex-контейнер для центрирования */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    height:auto; /* Высота экрана */
+    flex-direction: column; /* Расположение дочерних элементов в столбец */
+}
+
+/* Стили для центрирования содержимого */
+center {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+/* Стили для заголовка h2 */
+h2 {
+    background-color: #191970; /* Цвет фона приветственного сообщения */
+    color: #fff; /* Цвет текста приветственного сообщения */
+    padding: 10px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    width: 100%; /* Ширина блока */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    margin:auto;
+    margin-bottom:10px;/* Отступ снизу */
+}
+
+/* Стили для кнопки .return-button */
+.return-button {
+    background-color: #191970; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Внутренний отступ кнопки */
+    border: none; /* Убираем границу кнопки */
+    border-radius: 20px; /* Закругление углов кнопки */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Блочное отображение */
+    margin-top: 15px; /* Внешний отступ сверху */
+}
+
+/* Стили для кнопки .return-button в состоянии наведения */
+.return-button:hover {
+    background-color: #123456; /* Изменение цвета фона при наведении */
+}
+
+/* Стили для секции .header */
+.header {
+    background-color: #fff; /* Цвет фона секции header */
+    border-radius: 20px; /* Закругление углов секции header */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень секции header */
+    padding: 20px; /* Внутренний отступ секции header */
+    witdh:auto; /* Ширина секции header */
+    margin: 0 auto; /* Центрирование .header */
+}
+
+/* Стили для блока .menu */
+.menu {
+    display: auto; /* Блочно-строчное отображение, чтобы выровнять по центру */
+    margin-bottom: 10px;
+}
+
+/* Стили для навигационного меню .menu__body */
+.menu__body {
+    margin: auto; /* Внешний отступ сверху */
+    margin-bottom: 10px;
+    width: auto;
+}
+
+/* Стили для списка .menu__list */
+.menu__list {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0; /* Обнуляем внутренний отступ списка */
+    text-align: center;
+}
+
+/* Стили для ссылок .menu__link */
+.menu__link {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #191970; /* Цвет текста ссылок */
+    padding: 10px; /* Внутренний отступ ссылок */
+    border: 1px solid #191970; /* Граница вокруг ссылок */
+    border-radius: 20px; /* Закругление углов ссылок */
+    display: block; /* Блочное отображение, чтобы ссылки располагались одна под другой */
+    margin: auto; /* Внешний отступ снизу между ссылками */
+}
+
+/* Стили для ссылок .menu__link в состоянии наведения */
+.menu__link:hover {
+    background-color: #191970; /* Изменение цвета фона при наведении */
+    color: #fff; /* Изменение цвета текста при наведении */
+}
+
+/* Стили для обертки .wrapper */
+.wrapper {
+    text-align: center; /* Выравнивание текста по центру */
+    margin: auto; /* Внешний отступ сверху */
+}
+
+
+/* Стили для заголовка h2 .title */
+.title {
+    background-color: #191970; /* Цвет фона заголовка */
+    color: #fff; /* Цвет текста заголовка */
+    padding: 15px; /* Внутренний отступ заголовка */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень заголовка */
+}

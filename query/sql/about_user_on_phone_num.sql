@@ -1,0 +1,1 @@
+select id_subscriber, name, surname, birthday, adress, enroll_date, department from subscriber join tariff_plan on sub_id = id_subscriber where phone_num = '$phone_num'

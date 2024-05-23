@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<title>Dynamic_page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='query/query.css') }}">
+<body>
+<h2>{{info_title}}</h2>
+<center>
+	<p>
+		<table border="1">
+    <tr>
+        <td>Номер телефона</td>
+        <td>Задолженность</td>
+        <td>Месяц</td>
+        <td>Год</td>
+        <td>Статус</td>
+    </tr>
+    {% for info in result %}
+    <tr>
+        <td>{{info['phone_num']}}</td>
+        <td>{{info['excess_amount']}}</td>
+        <td>{{info['limit_month']}}</td>
+        <td>{{info['limit_year']}}</td>
+        <td>
+            {% if info['sign_of_payment'] == 1 %}
+                Оплачено
+            {% elif info['sign_of_payment'] == 0 %}
+                Не оплачено
+            {% else %}
+                Неизвестный статус
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+	<a href="{{url_for('menu_choice')}}"> Возврат в главное меню</a>
+	<a href="{{url_for('bp_query.external_query_menu')}}"> Возврат в меню запросов</a>
+</center>
+</body>
+</html>

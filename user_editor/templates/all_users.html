@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>product_list</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='UE/UE.css') }}">
+<h2 align="center">Список всех пользователей</h2>
+<body>
+    <form action="" method="POST">
+            <button type="submit" name="action" value="add_user">Добавить поользователя</button>
+    </form>
+    <center>
+
+        <hr>
+        {% for user in users %}
+        <table>
+            <tr>
+                <td>
+                    <span id="user_name">{{user['name'] + ' ' + user['surname']}}</span>
+                </td>
+            </tr>
+            {% for number in numbers %}
+            {% if number['sub_id'] == user['id_subscriber'] %}
+            <form action="" method="POST">
+                <input type="hidden" name="out_emp_id" value="{{ user['id_subscriber'] }}">
+                <tr>
+                    <td>{{number['phone_num']}}</td>
+                    <td width="100px"></td>
+                    <td>{{number['limit_']}}</td>
+                    <td width="100px"></td>
+                    <td>
+                        <button type="submit" name="action" value="edit_phone">Редактировать</button>
+                        <button type="submit" name="action" id="del_btn" value="del_phone"
+                            onclick="return confirm('Подтвердите удаление')">Удалить</button>
+                        <input type="hidden" name="out_phone_id" value="{{ number['phone_num'] }}">
+                    </td>
+                </tr>
+            </form>
+            {% endif %}
+            {% endfor %}
+            <tr>
+                <form action="" method="POST">
+                    <input type="hidden" name="out_emp_id" value="{{ user['id_subscriber'] }}">
+                    <td>
+                        <button type="submit" name="action" value="add_phone">Добавить телефон</button>
+                    </td>
+                </form>
+            </tr>
+        </table>
+        <hr>
+        {% endfor %}
+        <br><br>
+        <a href="/">Выход в меню</a>
+    </center>
+</body>
+</html>

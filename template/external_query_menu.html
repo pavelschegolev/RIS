@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query menu</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='menu/menu.css') }}">
+</head>
+<body>
+<h2>Выберите желаемую информацию </h2>
+    <center>
+        <div class="menu">
+            <section class="header">
+                <nav class="menu__body">
+                    <table class="menu__list">
+                        <tr>
+                            <td><a href="{{url_for('bp_query.about_me')}}"class="menu__link">Информация обо мне</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{url_for('bp_query.my_duty')}}"class="menu__link">Мои задолженности</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{url_for('bp_query.my_tariff_plan')}}"class="menu__link">Посмотреть мой Тарифный план</a></td>
+                        </tr>
+                    </table>
+                </nav>
+            </section>
+        </div>
+         <!-- Кнопка для возврата в главное меню -->
+        <a class="return-button" href="{{url_for('menu_choice')}}">Возврат в главное меню</a>
+    </center>
+</body>
+</html>

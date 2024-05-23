@@ -1,0 +1,1 @@
+select phone_num, excess_amount,limit_year,limit_month from limit_table where phone_num = '$phone_num' and sign_of_payment = 0

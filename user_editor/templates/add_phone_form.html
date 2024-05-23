@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>product_list</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='UE/UE.css') }}">
+<body>
+    <h2 align="center">Введите данные для добавления телефона</h2>
+    <center>
+        <form action="" method="POST">
+            <input type="hidden" name="out_emp_id" value="{{ user_id }}">
+            <label for="phone">Номер телефона</label>
+            <input type="text" name="phone" id="phone" placeholder="+799999999999">
+            <br><br>
+            <label for="phone_limit">Лимит средств, предоставляющая компания</label>
+            <input type="text" name="phone_limit" id="phone_limit" placeholder="limit">
+            <br><br>
+            <label for="phone_limit">Действителен до(год)</label>
+            <input type="text" name="period_year" id="period_year">
+            <br><br>
+            <label for="phone_limit">Действителен до(месяц)</label>
+            <input type="text" name="period_month" id="period_month">
+            <br><br>
+            <button type="submit" name="action" value="add_phone_for_sql">Отправить</button>
+        </form>
+        <br><br>
+        <a href="{{ url_for('bp_user_editor.show_all_numbers') }}">Назад</a>
+    </center>
+</body>
+
+</html>

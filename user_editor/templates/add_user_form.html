@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>product_list</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='UE/UE.css') }}">
+<body>
+    <h2 align="center">Введите данные для добавления Абонента</h2>
+    <center>
+        <form action="" method="POST">
+            <label for="first_name">Имя</label>
+            <input type="text" name="first_name" id="first_name">
+            <br><br>
+            <label for="last_name">Фамилия</label>
+            <input type="text" name="last_name" id="last_name">
+            <br><br>
+            <label for="birthday">Дата рождения</label>
+            <input type="text" name="birthday" id="birthday" placeholder="YYYY-MM-DD">
+            <br><br>
+            <label for="adress">Адресс</label>
+            <input type="text" name="adress" id="adress" placeholder="London, Baker st.">
+            <br><br>
+            <label for="department">Отдел</label>
+            <input type="text" name="department" id="department" placeholder="RUS1">
+            <br><br>
+            <button type="submit" name="action" value="add_user_for_sql">Отправить</button>
+        </form>
+        <br><br>
+        <a href="{{ url_for('bp_user_editor.show_all_numbers') }}">Назад</a>
+    </center>
+</body>
+
+</html>

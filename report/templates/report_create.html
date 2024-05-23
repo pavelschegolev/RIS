@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='report/report.css') }}">
+<body>
+<h2 align="center" , method=POST>Ввод данных</h2>
+    <form action="" , method="POST">
+        <center>
+            {% if year_ %}
+            Введите год:
+            <input type="number" name=input_year placeholder=2019><br><br>
+            {% endif %}
+            {% if month_ %}
+            Введите месяц:
+            <input type="number" name=input_month placeholder=6><br><br>
+            {% endif %}
+            <input type="submit" value="Создать">
+            <br><br><br>
+
+            <a href={{url_for('bp_report.reports')}}> Вернуться к отчетам</a>
+        </center>
+    </form>
+
+</body>
+
+</html>

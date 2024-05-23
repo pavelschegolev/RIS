@@ -1,0 +1,1 @@
+select phone_num, sub_id,limit_ from tariff_plan

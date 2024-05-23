@@ -1,0 +1,19 @@
+{
+    "report_header": "Отчет о сотрудниках, не погасивших задолженность",
+    "report_description": "Сожержит информацию о сотрудниках, которые не выплатили задолженность за указанный год и месяц",
+    "report_sql_exist": "report_debt_existing.sql",
+    "report_sql_call": "report_debt_call.sql",
+    "report_sql_watch": "report_debt_watch.sql",
+    "schema": [
+        "Имя",
+        "Фамилия",
+        "Общая сумма долга"
+    ],
+    "inputs": [
+        "year_",
+        "month_"
+    ],
+    "group_required": [
+        "manager"
+    ]
+}

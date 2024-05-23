@@ -1,0 +1,3 @@
+{"admin": ["bp_query","bp_user_editor"],
+  "manager": ["bp_query","report"]
+}

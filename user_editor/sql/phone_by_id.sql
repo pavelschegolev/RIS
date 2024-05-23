@@ -1,0 +1,1 @@
+select phone_num, limit_ ,period_year,period_month from tariff_plan where phone_num = '$phone_id'

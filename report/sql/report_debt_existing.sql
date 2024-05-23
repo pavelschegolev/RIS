@@ -1,0 +1,1 @@
+select count(year_) as count from report_debt where year_="$year_" and month_="$month_"

@@ -1,0 +1,19 @@
+{
+    "report_header": "Отчет о годовом превышении лимита",
+    "report_description": "Сожержит информацию о превышениях лимита за указанный год",
+    "report_sql_exist": "report_over_limit_existing.sql",
+    "report_sql_call": "report_over_limit_call.sql",
+    "report_sql_watch": "report_over_limit_watch.sql",
+    "schema": [
+        "Имя",
+        "Фамилия",
+        "Номер",
+        "Сумма превышений лимита"
+    ],
+    "inputs": [
+        "year_"
+    ],
+    "group_required": [
+        "manager"
+    ]
+}

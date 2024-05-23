@@ -1,0 +1,1 @@
+select * from tariff_plan where phone_num = '$phone_num'

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Отчет уже создан </title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='report/report.css') }}">
+<body>
+    <h2 align="center"> Отчет за введенный отчетный период уже существует</h2> <br><br>
+    <div align=center>
+        <a href={{url_for('bp_report.reports')}}> Вернуться к отчетам</a>
+    </div>
+
+</body>
+</html>

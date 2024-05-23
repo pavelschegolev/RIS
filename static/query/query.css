@@ -1,0 +1,105 @@
+/* dynamic_page.css */
+
+body {
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт текста */
+    background-color: #f4f4f4; /* Цвет фона */
+    margin: auto; /* Обнуляем отступы */
+    display: flex; /* Используем flex-контейнер для центрирования */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    height: auto; /* Высота экрана */
+    flex-direction: column; /* Расположение дочерних элементов в столбец */
+}
+
+center {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+h2 {
+    background-color: #191970; /* Цвет фона приветственного сообщения */
+    color: #fff; /* Цвет текста приветственного сообщения */
+    padding: 10px; /* Внутренний отступ */
+    text-align: center; /* Выравнивание текста по центру */
+    width: 100%; /* Ширина блока */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    margin:auto;
+    margin-bottom:10px;/* Отступ снизу */
+}
+
+table {
+    border-collapse: collapse; /* Убираем раздельные границы ячеек таблицы */
+    width: 100%; /* Ширина таблицы */
+    margin-top: 20px; /* Внешний отступ сверху */
+    border-radius: 20px; /* Закругление углов таблицы */
+}
+
+table, th, td {
+    border: 2px solid #191970; /* Границы таблицы и ячеек */
+}
+
+th, td {
+    padding: 10px; /* Внутренний отступ ячеек */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+a {
+    background-color: #191970; /* Цвет фона ссылок */
+    color: #fff; /* Цвет текста ссылок */
+    padding: 10px 20px; /* Внутренний отступ ссылок */
+    border: none; /* Убираем границу ссылок */
+    border-radius: 20px; /* Закругление углов ссылок */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Блочное отображение */
+    margin-top: 15px; /* Внешний отступ сверху */
+}
+
+a:hover {
+    background-color: #123456; /* Изменение цвета фона при наведении */
+    color: #fff; /* Изменение цвета текста при наведении */
+}
+form {
+    background-color: #fff; /* Цвет фона формы */
+    border-radius: 20px; /* Закругление углов формы */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень формы */
+    padding: 20px; /* Внутренний отступ формы */
+    width: 300px; /* Ширина формы */
+}
+
+label {
+    display: block; /* Блочное отображение, чтобы каждый label начинался с новой строки */
+    margin-bottom: 10px; /* Внешний отступ снизу между label и полем ввода */
+    color: #191970; /* Цвет текста label */
+}
+
+input {
+    width: 100%; /* Ширина полей ввода */
+    padding: 10px; /* Внутренний отступ полей ввода */
+    margin-bottom: 15px; /* Внешний отступ снизу между полями ввода */
+    box-sizing: border-box; /* Учитываем внутренние отступы и границы в общей ширине элемента */
+}
+
+.button {
+    background-color: #191970; /* Цвет фона кнопок */
+    color: #fff; /* Цвет текста кнопок */
+    padding: 10px 20px; /* Внутренний отступ кнопок */
+    border: none; /* Убираем границу кнопок */
+    border-radius: 20px; /* Закругление углов кнопок */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Блочное отображение */
+    margin-right: 10px; /* Внешний отступ справа между кнопками */
+}
+
+.button:hover {
+    background-color: #123456; /* Изменение цвета фона кнопок при наведении */
+}
+
+.return-buttons {
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 15px; /* Внешний отступ сверху между кнопками возврата */
+}
+
+.return-buttons a {
+    display: inline-block; /* Блочно-строчное отображение, чтобы кнопки располагались на одной линии */
+    margin: 0 10px; /* Внешний отступ между кнопками */
+    text-decoration: none; /* Убираем подчеркивание текста */
+}

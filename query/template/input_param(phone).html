@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма ввода</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='query/query.css') }}">
+</head>
+<body>
+    <h2>Введите параметры поиска</h2>
+    <center>
+        <form action="" method="post">
+            <label for="phone_num">Номер телефона</label>
+            <!-- Используем type="tel" для ввода телефонного номера -->
+            <input type="tel" name="phone_num" id="phone_num" pattern="\+\d{11}" placeholder="Например +79999999999" required>
+            <br><br>
+            <input type="submit" class="button" value="Отправить">
+            <input type="reset" class="button" value="Очистить">
+        </form>
+    </center>
+    <div class="return-buttons">
+        <a href="{{url_for('menu_choice')}}"> Возврат в главное меню</a>
+        <a href="{{url_for('bp_query.internal_query_menu')}}"> Возврат в меню запросов</a>
+    </div>
+</body>
+</html>

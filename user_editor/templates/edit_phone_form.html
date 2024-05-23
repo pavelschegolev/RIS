@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>product_list</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='UE/UE.css') }}">
+<body>
+    <h2 align="center">Введите изменения для телефона {{ number['phone'] }}</h2>
+    <center>
+        <form action="" method="POST">
+            <input type="hidden" name="out_phone_id" value="{{ number['phone_num'] }}">
+            <label for="phone_limit">Лимит средств, предоставляющая компания</label>
+            <input type="text" name="phone_limit" id="phone_limit" value="{{ number['limit_'] }}">
+            <br><br>
+            <label for="phone_limit">Действителен до (год)</label>
+            <input type="text" name="period_year" id="period_year" value="{{ number['period_year'] }}">
+            <br><br>
+            <label for="phone_limit">Действителен до (месяц)</label>
+            <input type="text" name="period_month" id="period_month" value="{{ number['period_month'] }}">
+            <br><br>
+            <button type="submit" name="action" value="update_phone">Отправить</button>
+        </form>
+        <br><br>
+        <a href="{{ url_for('bp_user_editor.show_all_numbers') }}">Назад</a>
+    </center>
+</body>
+
+</html>

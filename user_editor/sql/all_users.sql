@@ -1,0 +1,1 @@
+select id_subscriber, name, surname from subscriber

@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<title>Dynamic_page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='query/query.css') }}">
+<body>
+<h2>{{info_title}}</h2>
+<center>
+	<p>
+		<table border="1">
+			<tr>
+				<td>ID абонента</td>
+				<td>Имя</td>
+				<td>Фамилия</td>
+				<td>Дата рождения</td>
+				<td>Адрес</td>
+				<td>Дата зачисления</td>
+				<td>Отдел</td>
+			</tr>
+			{% for info in result %}
+	<tr>
+			<td>{{info['id_subscriber']}}</td>
+			<td>{{info['name']}}</td>
+			<td>{{info['surname']}}</td>
+			<td>{{info['birthday']}}</td>
+			<td>{{info['adress']}}</td>
+			<td>{{info['enroll_date']}}</td>
+			<td>{{info['department']}}</td>
+			{% endfor %}
+	</tr>
+
+</table>
+	<a href="{{url_for('menu_choice')}}"> Возврат в главное меню</a>
+	<a href="{{url_for('bp_query.internal_query_menu')}}"> Возврат в меню запросов</a>
+</center>
+</body>
+</html> 
